@@ -7,17 +7,38 @@
 .dashboardContainer{
     display: flex;
     flex-direction: column;
-    background-color: blue;
-    width: 20%;
+    background-color: rgb(0, 153, 255);
+    width: 15%;
+    padding: 20px;  
+    
 }
 
-.dashboardContainer div{
+.dashboardContainer #main button {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-bottom: 60px;
+}
+
+.dashboardContainer #misc button {
+    margin-top: 60px;
+}
+
+.dashboardContainer button{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgb(0, 153, 255);
+    border: none;
+    color: white;
+    align-items: center;
+    padding-left: 30px;
+
 }
+
+
 
 .headerContainer1, .headerContainer2{
     display: flex;
