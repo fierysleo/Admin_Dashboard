@@ -1,0 +1,26 @@
+.mainContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+}
+
+.dashboardContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    width: 20%;
+}
+
+.dashboardContainer div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headerContainer1, .headerContainer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
