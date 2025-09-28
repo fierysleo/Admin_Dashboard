@@ -8,13 +8,13 @@
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 153, 255);
-    width: 15%;
+    width: min(40vw, 250px);
     padding: 20px;  
     
 }
 
 .dashboardContainer #main button {
-    font-size: 20px;
+    font-size: min(4vw, 20px);
     font-weight: bold;
     padding-left: 10px;
     margin-bottom: 60px;
@@ -29,7 +29,7 @@
     flex-direction: row;
     text-align: center;
     border-radius: 10px;
-    font-size: 15px;
+    font-size: min(3vw, 16px);
     background-color: rgb(0, 153, 255);
     border: none;
     color: white;
@@ -38,10 +38,85 @@
 
 }
 
+.contentsContainer{
+    display: flex;
+    flex-direction: column;
+    width: min(100vw - 250px, 1000px);
+    padding: 20px;
+    background-color: white;
+}
 
+.headerContainer1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: white;
+    margin-bottom: 20px;
+}
 
-.headerContainer1, .headerContainer2{
+ .headerContainer2{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+.searchContainer input{
+    border: none;
+    font-size: min(3vw, 16px);
+    width: min(50vw, 400px);
+    margin-left: 10px;
+}
+.searchContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    width: min(50vw, 400px);
+}
+
+.profileContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.accountName{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.accountName button{
+    font-size: min(3vw, 16px);
+    border: none;
+    background-color: rgb(0, 153, 255);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.gridContainer{
+    background-color: rgb(246, 246, 246);
+}
+
+.contents{
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 30% 30% 20%;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+}
+
+.contents div{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
 }
